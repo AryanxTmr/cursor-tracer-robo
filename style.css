@@ -46,21 +46,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;]
-    z-index: 999;
+    padding: 1rem 8rem;]
+    
   }
 
   header  h1 {
-    margin: 10%;
+    margin: 5%;
     font-size: center;
     font-weight: 300;
+    margin-left: -5%;
 
   }
   
   nav{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     margin-left: -5%;
     
 
@@ -71,19 +72,26 @@ body{
     transition: color 0.2s ease;
     text-decoration: none;
     color: inherit;
+    z-index: 999;
   }
 
   nav a:hover{
     color: #a7a7a7;
+  }
+   
+  .btn-signing{
     color: black;
+    background-color: #a7a7a7;
     padding: 0.8rem 2rem;
+    border-radius: 50px;
    border: none;
    font-size: 1rem;
    font-weight: 500;
    transition: background-color 0.2s ease;
    cursor: pointer;
-   
+   z-index: 999;
   }
+  
 
   .btn-signing:hover{
     background-color: white;
@@ -155,12 +163,121 @@ body{
     letter-spacing: 0.5em;
     max-width: 35rem;
     color: gray;
+    margin-top: 30rem;
   }
 
   .button{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+    margin-top: 3rem;
+
 
   }
 
+  .btn-get-started{
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-get-started:hover{
+    background-color: #1a1a1a;
+  }
+
+  .btn-signing-main{
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background-color  0.2s ease;
+
+  }
+
+  .btn-signing-main:hover{
+    background-color: gray;
+  }
+
+  .robot-3d{
+    position: absolute;
+    top: 0%;
+    right: -20%;
+  }
+
+   @media(max-width: 1300px){
+    header{
+      padding: 1rem 0.5rem;
+
+    }
+
+    .content{
+      margin-top: 85%;
+
+    }
    
+    .robot-3d{
+      scale: 0.8%;
+      top: -29%;
+      right: 2%;
+    }
+  }
+
+  @media(max-width: 768px){
+    header{
+      padding: 1rem 0.3rem;
+    }
+     nav{
+      display: none;
+     }
+
+     header h1{
+      font-size: 2rem;
+     }
+
+     .btn-signing{
+      width: 100%;
+     }
+
+     ,content{
+      margin-top: 25rem;
+
+     }
+
+     .robot-3d{
+      scale: 0.5;
+      top: 25%;
+      right: 0;
+
+     }
+
+     .content{
+      max-width: 30rem;
+      margin: ;
+     }
+     .tag-box{
+      width: 12rem;
+      }
+ 
+     .content h1 {
+      font-size: 2.5rem;
+     }  
+     .description{
+      font-size: 1rem;
+     }
+     .btn-get-started{
+      font-size: 0.8rem;
+      padding: 0.5rem 1.2rem;
+     }
+     .btn-signing-main{
+      font-size: 0.8rem;
+      padding: 0.8rem 2rem;
+     }
+  }
